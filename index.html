@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="kr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1.0, user-scalable=no" />
+
+  <meta name="robots" content="index,follow" />
+  <link rel="icon" href="./favicon.ico" />
+  <link rel="apple-touch-icon" href="./images/logo.png" />
+  <link rel="manifest" href="./manifest.json" />
+  <link rel="stylesheet" href="./index.css" />
+
+  <title>X2평생주소 | X2</title>
+  <meta name="description" content="X2평생주소 회원님들과의 신뢰로 무사고 8년차 X2
+가입머니로 클래식의 메이저를 경함하세요">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="X2평생주소 | X2">
+  <meta property="og:description" content="X2평생주소 회원님들과의 신뢰로 무사고 8년차 X2
+가입머니로 클래식의 메이저를 경함하세요">
+  <meta property="og:site_name" content="X2">
+  <meta property="og:url" content="https://www.xn--x2-cv4jswp20a7jq.com">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="X2평생주소 | X2">
+  <meta name="twitter:description" content="X2평생주소 회원님들과의 신뢰로 무사고 8년차 X2
+가입머니로 클래식의 메이저를 경함하세요">
+
+  <link rel="canonical" href="https://www.xn--x2-cv4jswp20a7jq.com/">
+  <meta name="google-site-verification" content="HAu6HAb_2poIYW7l2NfvTqRKyOm_3_oauv7A7ubImUE">
+</head>
+
+<body>
+  <div class="header">
+    <div class="logo" onclick="window.scrollTo({top: 0});"><img src="./images/logo.png" /></div>
+    <div class="entry"><img src="./images/entry.png" /></div>
+  </div>
+  <div class="wrapper">
+    <div class="title"><img src="./images/title.png" /></div>
+    <div class="ac-container">
+      <div class="ac ac-1"><img src="./images/ac_1.png" /></div>
+      <div class="ac ac-2"><img src="./images/ac_2.png" /></div>
+      <div class="ac ac-3"><img src="./images/ac_3.png" /></div>
+    </div>
+    <div class="text"><img src="./images/text.png" /></div>
+    <div class="bt-container">
+      <div class="bt pointer" onclick="window.open('https://mk-x5.com/', '_black')">
+        <img src="./images/bt_1.png" />
+      </div>
+      <div class="bt pointer" onclick="window.open('https://t.me/x2_real', '_black')">
+        <img src="./images/bt_2.png" />
+      </div>
+      <div class="bt"><img src="./images/bt_3.png" /></div>
+    </div>
+    <div class="slide-container">
+      <div class="slide slide-1 fade-on"><img src="./images/slide_1.png" /></div>
+      <div class="slide slide-2 fade-on pointer" onclick="window.open('https://t.me/x2_real', '_black')">
+        <img src="./images/slide_2.png" />
+      </div>
+      <div class="slide slide-3 fade-on pointer" onclick="window.open('https://t.me/x2_real', '_black')">
+        <img src="./images/slide_3.png" />
+      </div>
+    </div>
+  </div>
+  <div class="bottom"><img src="./images/bottom.png" /></div>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      setTimeout(() => {
+        document.querySelectorAll('.ac').forEach((el) => {
+          el.classList.add('show');
+        });
+      }, 0);
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const elements = document.querySelectorAll('.fade-on');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+            observer.unobserve(entry.target); // 한 번만 나타나게 할 경우
+          }
+        });
+      }, {
+        threshold: 0.1 // 10% 이상 보이면 작동
+      });
+      elements.forEach((el) => observer.observe(el));
+    });
+  </script>
+</body>
+
+</html>

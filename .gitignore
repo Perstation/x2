@@ -1,0 +1,9 @@
+node_modules
+./admin/node_modules/*
+./admin
+./client/node_modules/*
+./client
+/node_modules
+# src/public/views/*
+uploadImages/
+.DS_Store
