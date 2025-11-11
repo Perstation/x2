@@ -184,6 +184,16 @@ body {
 }
 
 /** pc */
+@media (min-width: 1760px) {
+  .title img {
+    margin-left: -36vw;
+  }
+}
+@media (max-width: 1759px) {
+  .title img {
+    margin-left: -46vw;
+  }
+}
 @media (min-width: 769px) {
   .header {
     height: 125px;
@@ -203,9 +213,6 @@ body {
   .wrapper {
     margin-left: 20vw;
     margin-right: 20vw;
-  }
-  .title img {
-    margin-left: -46vw;
   }
 }
 
