@@ -39,17 +39,25 @@
 </head>
 
 <body>
-  <div class="wrapper">
+  <div class="wrapper" onclick="window.open('http://엑스엑스.com')">
     <img src="./images/4.png" alt="x2" class="img-1" />
     <div class="img-container">
       <img src="./images/3.png" alt="x2" class="img-2" />
       <img src="./images/2.png" alt="x2" class="img-3" />
     </div>
-    <div class="img-container2" onclick="window.open('https://t.me/second_x2')">
+    <div class="img-container2" onclick="btnClick(event)">
       <img src="./images/1.png" alt="x2" class="img-4" />
       <span>접속 후 텔레그램 문의주세요</span>
     </div>
   </div>
 </body>
+
+<script>
+  function btnClick(event) {
+    event.stopPropagation();
+    event.preventDefault();
+    window.open('https://t.me/x2_cs_24h')
+  }
+</script>
 
 </html>
