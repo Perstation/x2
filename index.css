@@ -95,6 +95,9 @@ body {
 }
 
 @media (max-width: 422px) {
+  .wrapper {
+    padding-bottom: 42px;
+  }
   img {
     max-width: calc(100vw - 28px);
   }
