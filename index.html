@@ -45,17 +45,22 @@
       <img src="./images/3.png" alt="x2" class="img-2" />
       <img src="./images/2.png" alt="x2" class="img-3" />
     </div>
-    <div class="img-container1" onclick="btnClick(event)">
+    <div class="img-container1" onclick="btnClick1(event)">
       <img src="./images/btn1.png" alt="x2" class="img-4" />
     </div>
-    <div class="img-container2" onclick="btnClick(event)">
+    <div class="img-container2" onclick="btnClick2(event)">
       <img src="./images/btn2.png" alt="x2" class="img-4" />
     </div>
   </div>
 </body>
 
 <script>
-  function btnClick(event) {
+  function btnClick1(event) {
+    event.stopPropagation();
+    event.preventDefault();
+    window.open('https://x2x2-a.com')
+  }
+  function btnClick2(event) {
     event.stopPropagation();
     event.preventDefault();
     window.open('https://t.me/x2_cs_24h')
