@@ -1,12 +1,3 @@
-@font-face {
-  font-family: 'Pretendard'; /* 사용할 폰트 이름 정의 */
-  src:
-    url('./Pretendard-Regular.woff2') format('woff2'),
-    url('./Pretendard-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
 body {
   background-image: url('./images/5.jpeg');
   background-repeat: no-repeat;
@@ -20,21 +11,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family:
-    'Pretendard',
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    Roboto,
-    'Helvetica Neue',
-    'Segoe UI',
-    'Apple SD Gothic Neo',
-    'Noto Sans KR',
-    'Malgun Gothic',
-    'Apple Color Emoji',
-    'Segoe UI Emoji',
-    'Segoe UI Symbol',
-    sans-serif;
 }
 
 .background {
@@ -60,14 +36,14 @@ body {
   align-items: center;
   justify-content: flex-start;
   padding-top: 41px;
-  padding-bottom: 142px;
+  padding-bottom: 60px;
 }
 
 .img-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 269px;
+  margin-top: 349px;
 }
 
 .img-container .img-2 {
@@ -76,22 +52,18 @@ body {
 .img-container .img-3 {
   margin-left: -2px;
 }
-
+.img-container1,
 .img-container2 {
-  margin-top: -8px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.img-container2 span {
-  text-align: center;
-  color: #c9c9c9;
-  font-size: 16px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+.img-container1 {
+  margin-top: -17px;
+}
+.img-container2 {
+  margin-top: -52px;
 }
 
 @media (max-width: 422px) {
@@ -101,8 +73,12 @@ body {
   img {
     max-width: calc(100vw - 28px);
   }
+  .img-container1 img,
   .img-container2 img {
     max-width: 100vw;
+  }
+  .img-container2 {
+    margin-top: -20px;
   }
   .img-container {
     flex-direction: column;
